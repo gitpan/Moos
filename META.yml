@@ -20,5 +20,10 @@ no_index:
     - inc
     - t
 resources:
+  homepage: https://github.com/ingydotnet/moos-pm/tree
   license: http://dev.perl.org/licenses/
-version: 0.01
+  repository:
+    type: git
+    url: git://github.com/ingydotnet/moos-pm.git
+    web: https://github.com/ingydotnet/moos-pm/tree
+version: 0.02
