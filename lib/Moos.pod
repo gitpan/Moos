@@ -12,7 +12,7 @@ Moos - Moo s{imple,peedy,ingle}
     extends 'Boos';
 
     has this => ();
-    has that => (default => sub { 42 });
+    has that => 42;
     has other => (
         builder => 'build_other',
         lazy => 1,
@@ -23,13 +23,18 @@ Moos - Moo s{imple,peedy,ingle}
         # build, build, build
     }
 
+    sub BUILDARGS {
+        my ($self, @args) = @_;
+        # munge, munge, munge
+        return {%munged_args};
+    }
+
 =head1 DESCRIPTION
 
 Moos completes the M to Moose sequence of Perl OO modules.
 
 This one is pure Perl, no dependencies, single file and Moose compatible (for
-what it does). It is fairly minimal; it supports the features shown in the
-L<SYNOPSIS>.
+what it does). It is fairly minimal.
 
 =head1 FEATURES
 
@@ -37,6 +42,10 @@ Here's a quick list of the L<Moose> compatible features that are supported by
 L<Moos>:
 
 =over
+
+=item strict / warnings
+
+Turns on C<strict> and C<warnings> for you.
 
 =item extends
 
@@ -59,12 +68,24 @@ return is ignored.
 
     sub BUILD { my $self = shift; ... }
 
+=item Helpful exports
+
+The ever useful C<blessed> (from L<Scalar::Util>) and C<confess> (from
+L<Carp>) are exported to your namespace.
+
 =item has
 
-Accessor generator. Supports the C<default>, C<build> and C<lazy> options,
-described below.
+Accessor generator. Supports the C<is>, C<default>, C<build>, C<lazy>,
+C<clearer>, C<predicate>, C<required> and C<handles> options, described below.
 
     has this => ();
+
+=item is
+
+Specify which type of attribute accessor to provide. The default is "rw",
+a read-write accessor. Read-only "ro" accessors are also supported.
+
+    has this => ( is => "ro" );
 
 =item default
 
@@ -76,32 +97,64 @@ Specify the sub to generate a default value.
 
 Specify the method name to generate a default value.
 
-    has this => ( builder => 'build_this' );
+    has this => ( builder => '_build_this' );
+    has that => ( builder => 1 );  # accept default name for method
 
 =item lazy
 
 Don't generate defaults during object construction.
 
-    has this => ( builder => 'build_this', lazy => 1 );
+    has this => ( builder => '_build_this', lazy => 1 );
+
+=item clearer
+
+Creates a clearer method.
+
+    has this => ( clearer => "clear_this" );
+    has that => ( clearer => 1 );  # accept default name for method
+
+=item predicate
+
+Creates a predicate method, which can be used to check if the attribute is
+set or unset.
+
+    has this => ( predicate => "has_this" );
+    has that => ( predicate => 1 );  # accept default name for method
+
+=item required
+
+Require that a value for the attribute be provided to the constructor or
+generated during object construction.
+
+    has this => ( required => 1 );
+
+=item handles
+
+Delegated method calls.
+
+    has wheels => (handles => [qw/ roll /]);
+
+This accepts a hashref or arrayref, but not the other possibilities
+offered by L<Moose>.
 
 =back
 
-Note that currently all accessors are read-write, and the C<is> keyword is
-silently ignored (as are all other unknown keywords).
+Note that currently all accessors are read-write by default and all unknown
+options are silently ignored.
 
 =head1 HAS DIFFERENCES
 
 Moos has a few differences from Moose, regarding it's accessor support (ie the
 'has' function).
 
-Support for C<default>, C<builder> and C<lazy> are about the same. All other
-arguments are currently ignored, including the C<is> property. All generated
-accessors are 'rw'. So you can just say:
+The supported options detailed above are about the same as Moose. All other
+arguments are currently ignored. All generated accessors are 'rw'. So you can
+just say:
 
     has 'this';
     has that => ();
 
-Unlike the other Mo* modules, Moos also supports just sepcifiying the default.
+Unlike the other Mo* modules, Moos also supports just specifying the default.
 If the number of arguments (after the name) is an odd number, then the first
 value is the default. The following forms are valid:
 
@@ -147,6 +200,8 @@ this broke my toolchain (TestML, Module::Install, etc).
 I tried to inline L<Moo> into one file but failed, and ended up with this.
 I've shared Pegex::Base as L<Moos> in case any other projects want it.
 
+Later on, Toby added a bunch of low-cost but very features from Moose.
+
 =head1 ON SPEED
 
 In the end, I got Pegex to run even faster with Moos than it originally did
@@ -179,6 +234,11 @@ calls like they would expect to.
 
 I'm sure I've missed some subtlties, and would be glad to hear opinions, but
 in the meantime I'm happy that my code is faster and pure Perl.
+
+=head1 CREDITS
+
+Toby Inkster <tobyink@cpan.org> submitted a number of great pull requests,
+making Moos a little bit more like Moose.
 
 =head1 SEE ALSO
 
