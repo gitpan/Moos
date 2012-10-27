@@ -19,6 +19,8 @@ no_index:
   directory:
     - inc
     - t
+recommends:
+  Class::XSAccessor: 1.07
 requires:
   perl: 5.10.0
 resources:
@@ -28,4 +30,4 @@ resources:
     type: git
     url: git://github.com/ingydotnet/moos-pm.git
     web: https://github.com/ingydotnet/moos-pm/tree
-version: 0.06
+version: 0.07
