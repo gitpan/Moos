@@ -22,3 +22,4 @@ t/delegation.t
 t/readonly.t
 t/required.t
 t/test.t
+t/triggers.t
