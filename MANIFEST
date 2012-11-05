@@ -1,3 +1,4 @@
+bin/remoos
 Changes
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
@@ -7,10 +8,12 @@ inc/Module/Install/GithubMeta.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 inc/Module/Install/Package.pm
+inc/Module/Install/Scripts.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 inc/Module/Package.pm
 lib/Moos.pm
+lib/Moos/Role.pm
 lib/oos.pm
 LICENSE
 Makefile.PL
@@ -19,6 +22,7 @@ META.yml
 README
 t/clearer-predicate.t
 t/delegation.t
+t/moos-role.t
 t/readonly.t
 t/required.t
 t/test.t
