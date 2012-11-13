@@ -21,6 +21,7 @@ MANIFEST			This list of files
 META.yml
 README
 t/clearer-predicate.t
+t/constructor.t
 t/delegation.t
 t/moos-role.t
 t/readonly.t
