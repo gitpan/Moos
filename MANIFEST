@@ -24,6 +24,7 @@ t/clearer-predicate.t
 t/constructor.t
 t/delegation.t
 t/moos-role.t
+t/namespace-autoclean.t
 t/readonly.t
 t/required.t
 t/test.t
