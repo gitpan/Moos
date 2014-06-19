@@ -1,7 +1,7 @@
-Name
+NAME
     Moos - Moo s{imple,peedy,ingle}
 
-Synopsis
+SYNOPSIS
         package Foos;
         use Moos;
 
@@ -26,7 +26,7 @@ Synopsis
             return {%munged_args};
         }
 
-Description
+DESCRIPTION
     Moos completes the M to Moose sequence of Perl OO modules.
 
     This one is pure Perl, single file and mostly Moose compatible (for what
@@ -35,7 +35,7 @@ Description
     modules. If you steer away from those features, you don't need those
     additional modules.
 
-Features
+FEATURES
     Here's a quick list of the Moose compatible features that are supported
     by Moos.
 
@@ -197,9 +197,9 @@ Features
         "documentation".
 
     does / DOES
-        Methods to check whether the class/object performs a particular
+        Methods to check whether the class*object performs a particular
         role. The methods differ in that "does" checks roles only in the
-        Moose/Moo/Role::Tiny sense; "DOES" also takes into account
+        Moose*Moo/Role::Tiny sense; "DOES" also takes into account
         UNIVERSAL::DOES.
 
   Roles
@@ -238,7 +238,7 @@ Features
         By setting the environment variable, Moos will export the XXX
         debugging keywords.
 
-Whence Moos
+WHENCE MOOS
     I(ngy) created Moos during Pegex development. Pegex uses a clone of Moos
     called Pegex::Base. (Moos ships with a commandline utility called
     "remoos" that does this cloning.)
@@ -260,7 +260,7 @@ Whence Moos
     Moose. (Thus adding to the epic confusion that we embrace as Perl
     Mongers! :)
 
-On Speed
+ON SPEED
     In the end, I got Pegex to run even faster with Moos than it originally
     did with Mouse. I'll tell you my secret...
 
@@ -293,7 +293,7 @@ On Speed
     opinions, but in the meantime I'm happy that my code is faster and pure
     Perl.
 
-See Also
+SEE ALSO
     *   M
 
     *   Mo
@@ -308,16 +308,16 @@ See Also
 
     *   Mousse
 
-Authors
+AUTHORS
     Ingy döt Net <ingy@cpan.org>
 
     Toby Inkster <tobyink@cpan.org>
 
-Copyright and License
-    Copyright (c) 2012. Ingy döt Net.
+COPYRIGHT AND LICENSE
+    Copyright (c) 2012-2014. Ingy döt Net.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
 
-    See http://www.perl.com/perl/misc/Artistic.html
+    See <http://www.perl.com/perl/misc/Artistic.html>
 

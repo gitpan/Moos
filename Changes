@@ -1,83 +1,55 @@
----
-version: 0.15
-date:    Mon Nov 26 09:00:46 PST 2012
-changes:
-- Fix https://rt.cpan.org/Ticket/Display.html?id=81314
----
-version: 0.14
-date:    Mon Nov 26 08:40:02 PST 2012
-changes:
-- following patches from tobyink++
-- provide ->meta->add_method which does Sub::Name trickery
-- document and test Sub::Name-related stuff
-- fix delegation to lazy-built attributes
----
-version: 0.13
-date:    Tue Nov 13 11:51:44 PST 2012
-changes:
-- Support hashref of arguments in object construction.
----
-version: 0.12
-date:    Mon Nov 12 11:36:48 PST 2012
-changes:
-- Doc tweak.
----
-version: 0.11
-date:    Mon Nov  5 15:01:39 PST 2012
-changes:
-- Support Moos-Role.
----
-version: 0.10
-date:    Sat Nov  3 16:18:00 PDT 2012
-changes:
-- Role support and doc from tobyink++
----
-version: 0.09
-date:    Fri Oct 26 19:10:50 PDT 2012
-changes:
-- Ingy's evil twin.
----
-version: 0.08
-date:    Fri Oct 26 18:41:07 PDT 2012
-changes:
-- perl -Moos   # apeiron++
----
-version: 0.07
-date:    Fri Oct 26 18:18:06 PDT 2012
-changes:
-- Apply tobyink++'s https://github.com/ingydotnet/moos-pm/pull/7
-- Can has XS accessors now
----
-version: 0.06
-date:    Thu Oct 25 16:51:29 PDT 2012
-changes:
-- Apply tobyink++'s patches for 'is', clearer, predicate, confess, blessed and
-  more.
----
-version: 0.05
-date:    Thu Oct 25 12:44:58 PDT 2012
-changes:
-- Use Scalar::Util::blessed instead of ref
-- Support: has foo => 42;
-- Update docs.
----
-version: 0.04
-date:    Thu Oct 25 01:29:09 PDT 2012
-changes:
-- Rewrite based more closely on Moose implementation. doy++ helped me figure
-  things out.
----
-version: 0.03
-date:    Sun Oct 21 23:36:33 PDT 2012
-changes:
-- Add more to docs. lukec++
----
-version: 0.02
-date:    Sun Oct 21 17:33:58 PDT 2012
-changes:
-- Add features list to docs. sevvie++
----
-version: 0.01
-date:    Sun Oct 21 17:08:57 PDT 2012
-changes:
-- Initial version.
+0.16 Thu Jun 19 12:04:24 PDT 2014
+ - Move to Zilla-Dist
+
+0.15 Mon Nov 26 09:00:46 PST 2012
+ - Fix https://rt.cpan.org/Ticket/Display.html?id=81314
+
+0.14 Mon Nov 26 08:40:02 PST 2012
+ - following patches from tobyink++
+ - provide ->meta->add_method which does Sub::Name trickery
+ - document and test Sub::Name-related stuff
+ - fix delegation to lazy-built attributes
+
+0.13 Tue Nov 13 11:51:44 PST 2012
+ - Support hashref of arguments in object construction.
+
+0.12 Mon Nov 12 11:36:48 PST 2012
+ - Doc tweak.
+
+0.11 Mon Nov  5 15:01:39 PST 2012
+ - Support Moos-Role.
+
+0.10 Sat Nov  3 16:18:00 PDT 2012
+ - Role support and doc from tobyink++
+
+0.09 Fri Oct 26 19:10:50 PDT 2012
+ - Ingy's evil twin.
+
+0.08 Fri Oct 26 18:41:07 PDT 2012
+ - perl -Moos
+
+0.07 Fri Oct 26 18:18:06 PDT 2012
+ - Apply tobyink++'s https://github.com/ingydotnet/moos-pm/pull/7
+ - Can has XS accessors now
+
+0.06 Thu Oct 25 16:51:29 PDT 2012
+ - Apply tobyink++'s patches for 'is', clearer, predicate, confess, blessed
+   and more.
+
+0.05 Thu Oct 25 12:44:58 PDT 2012
+ - Use Scalar::Util::blessed instead of ref
+ - Update docs.
+
+0.04 Thu Oct 25 01:29:09 PDT 2012
+ - Rewrite based more closely on Moose implementation. doy++ helped me
+   figure things out.
+
+0.03 Sun Oct 21 23:36:33 PDT 2012
+ - Add more to docs. lukec++
+
+0.02 Sun Oct 21 17:33:58 PDT 2012
+ - Add features list to docs. sevvie++
+
+0.01 Sun Oct 21 17:08:57 PDT 2012
+ - Initial version.
+
