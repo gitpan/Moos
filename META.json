@@ -35,7 +35,8 @@
       "runtime" : {
          "recommends" : {
             "Class::XSAccessor" : "1.07",
-            "Role::Tiny" : "1.002000"
+            "Role::Tiny" : "1.002000",
+            "Sub::Identify" : "0.04"
          },
          "requires" : {
             "MRO::Compat" : "0",
@@ -55,6 +56,6 @@
          "web" : "https://github.com/ingydotnet/moos-pm"
       }
    },
-   "version" : "0.16"
+   "version" : "0.17"
 }
 
