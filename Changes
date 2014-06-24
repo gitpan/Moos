@@ -1,3 +1,6 @@
+0.19 Tue Jun 24 08:47:57 PDT 2014
+ - Add travis badge to doc
+
 0.18 Sat Jun 21 13:48:09 PDT 2014
  - Fix test failures with patch from tobyink++
 
