@@ -1,3 +1,7 @@
+0.20 Wed Jul 16 23:18:13 PDT 2014
+ - Rename docs to .swim
+ - Fix Meta and add Contributing file
+
 0.19 Tue Jun 24 08:47:57 PDT 2014
  - Add travis badge to doc
 
