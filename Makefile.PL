@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "MRO::Compat" => 0
   },
-  "VERSION" => "0.22",
+  "VERSION" => "0.23",
   "test" => {
     "TESTS" => "t/*.t"
   }
