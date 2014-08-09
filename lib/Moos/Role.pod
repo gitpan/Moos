@@ -28,20 +28,24 @@ additional L<Moos> features.
 
 =head1 FEATURES
 
-=head2 strict / warnings
+=over
+
+=item strict / warnings
 
 Turns on C<strict> and C<warnings> for you.
 
-=head2 Helpful exports
+=item Helpful exports
 
 The ever useful C<blessed> (from L<Scalar::Util>) and C<confess> (from
 L<Carp>) are exported to your namespace.
 
-=head2 `has`
+=item C<has>
 
 Accessor generator. See L<Moos>.
 
-=head2 Development Options
+=back
+
+=head1 DEVELOPMENT OPTIONS
 
 =over
 

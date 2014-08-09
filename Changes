@@ -1,3 +1,6 @@
+0.25 Fri Aug  8 19:25:16 PDT 2014
+ - Fix swim errors
+
 0.24 Fri Aug  8 12:41:45 PDT 2014
  - Switch hashbang to '#!/usr/bin/env perl'
 
