@@ -30,7 +30,7 @@ additional L<Moos> features.
 
 =over
 
-=item strict / warnings
+=item strict/warnings
 
 Turns on C<strict> and C<warnings> for you.
 

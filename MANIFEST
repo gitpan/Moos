@@ -14,6 +14,7 @@ lib/Moos/Role.pm
 lib/Moos/Role.pod
 lib/oos.pm
 lib/oos.pod
+t/000-require-modules.t
 t/clearer-predicate.t
 t/constructor.t
 t/delegation.t

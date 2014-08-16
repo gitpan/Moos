@@ -39,7 +39,7 @@ FEATURES
     Here's a quick list of the Moose compatible features that are supported
     by Moos.
 
-  strict / warnings
+  strict/warnings
     Turns on "strict" and "warnings" for you.
 
   Helpful exports
@@ -196,7 +196,7 @@ FEATURES
         "clearer", "default", "builder", "trigger", "required", "lazy" and
         "documentation".
 
-    does / DOES
+    does/DOES
         Methods to check whether the class*object performs a particular
         role. The methods differ in that "does" checks roles only in the
         Moose*Moo/Role::Tiny sense; "DOES" also takes into account
