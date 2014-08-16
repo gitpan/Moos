@@ -1,3 +1,6 @@
+0.27 Fri Aug 15 23:22:04 PDT 2014
+ - Add =encoding to bin/remoos
+
 0.26 Fri Aug 15 19:48:46 PDT 2014
  - Add t/000-require-modules.t
 
